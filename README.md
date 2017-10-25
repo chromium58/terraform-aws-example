@@ -13,6 +13,8 @@
  4. Check what terraform going to do with terraform plan
  5. Build infrastructure with terraform apply
 
+After successfully building terraform will output http endpoint url, you can visit it and see that everything builded correctly.
+
  ### Variables example
 
  ```
