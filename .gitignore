@@ -1,0 +1,6 @@
+variables.tf
+.terraform/
+app.zip
+output.txt
+terraform.tfstate
+terraform.tfstate.backup
