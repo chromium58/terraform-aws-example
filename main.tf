@@ -9,13 +9,13 @@ resource "aws_vpc" "demovpc" {
 
 resource "aws_security_group" "demosg" {
   name        = "demosg"
-  description = "Demovpc for AWS lambda and AWS RDS connection"
+  description = "Demo security group for AWS lambda and AWS RDS connection"
   vpc_id      = "${aws_vpc.demovpc.id}"
   ingress {
     from_port       = 0
     to_port         = 0
     protocol        = "-1"
-    cidr_blocks     = ["0.0.0.0/0"]
+    cidr_blocks     = ["127.0.0.1/32"]
     self = true
   }
   egress {
