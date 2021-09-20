@@ -20,12 +20,12 @@ After successfully building terraform will output http endpoint url, you can vis
  ```
  $ cat variables.tf
 variable "account_id" {
-  type = "string"
+  type = string
   default = "xxxxxxxxxxxx"
 }
 
 variable "region" {
-  type = "string"
+  type = string
   default = "us-west-2"
 }
 
